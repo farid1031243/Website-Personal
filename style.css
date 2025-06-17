@@ -3,32 +3,35 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #4a90e2;
-  padding: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
   gap: 10px;
-  border-radius: 5px;
 }
 
 nav a {
   color: white;
+  background-color: #3367d6;
+  padding: 10px 16px;
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 15px;
   font-size: 1rem;
-  background-color: #3367d6;
   border-radius: 6px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
   background-color: #2851a3;
 }
 
-/* Responsif di hape */
+/* HP View: tampil grid 2 kolom */
 @media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
   nav a {
-    flex: 1 1 45%; /* tampil 2 kolom */
+    flex: 1 1 48%;
+    font-size: 0.9rem;
     text-align: center;
-    font-size: 0.95rem;
-    padding: 10px;
+    padding: 10px 0;
   }
 }
