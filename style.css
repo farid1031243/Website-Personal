@@ -118,3 +118,28 @@ footer {
     padding: 20px;
   }
 }
+/* Contoh CSS responsif untuk tampilan hape */
+
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main ul {
+    padding-left: 20px;
+  }
+}
+
+/* Supaya gambar tidak keluar layar */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
