@@ -1,42 +1,7 @@
-/* Reset dan font */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Struktur dasar */
-body {
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header */
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  color: #4a90e2;
-  font-size: 2.8rem;
-  margin-bottom: 5px;
-}
-
-header p {
-  font-size: 1.1rem;
-  color: #666;
-}
-
 /* Navigasi horizontal scrollable */
 nav {
   display: flex;
+  flex-wrap: nowrap; /* Mencegah wrap ke bawah */
   overflow-x: auto;
   white-space: nowrap;
   background-color: #4a90e2;
@@ -44,9 +9,11 @@ nav {
   gap: 10px;
   border-radius: 5px;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling di HP */
 }
 
 nav a {
+  flex: 0 0 auto; /* Mencegah menu mengecil atau membesar */
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -54,73 +21,11 @@ nav a {
   font-size: 1rem;
   background-color: #3367d6;
   border-radius: 6px;
-  flex: 0 0 auto;
   scroll-snap-align: start;
   transition: background-color 0.3s ease;
+  white-space: nowrap; /* Mencegah teks turun ke baris baru */
 }
 
 nav a:hover {
   background-color: #2851a3;
-}
-
-/* Konten utama */
-main {
-  flex-grow: 1;
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 25px 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-}
-
-main h2 {
-  color: #4a90e2;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #4a90e2;
-  padding-bottom: 6px;
-}
-
-main ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 25px;
-}
-
-main ul li {
-  padding: 5px 0;
-  font-size: 1.05rem;
-}
-
-/* Tombol khusus */
-a.button {
-  display: inline-block;
-  background: #4a90e2;
-  color: white !important;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-bottom: 20px;
-}
-
-a.button:hover {
-  background-color: #3b78d8;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 40px;
-  border-top: 1px solid #ddd;
-}
-
-/* Supaya gambar tidak keluar layar */
-img {
-  max-width: 100%;
-  height: auto;
 }
