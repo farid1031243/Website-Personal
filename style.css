@@ -1,46 +1,95 @@
+/* Umum */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #f0f2f5, #dbe9f4);
+  background: #f5f7fa;
+  color: #333;
   margin: 0;
   padding: 0;
-  color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #2a6ddf;
+  background-color: #4a90e2;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 30px 15px;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+/* Navigasi */
 nav {
-  background-color: #1f4fad;
-  padding: 10px;
+  background-color: #3a78c2;
   text-align: center;
+  padding: 10px 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 15px;
   font-weight: bold;
-  padding: 5px 10px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #0e387d;
-  border-radius: 5px;
+  color: #ffda77;
 }
 
+/* Konten Utama */
 main {
-  padding: 30px;
-  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+main h2 {
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 5px;
+}
+
+/* Tombol */
+a.button {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+a.button:hover {
+  background: #3a78c2;
+}
+
+/* Footer */
 footer {
-  background-color: #2a6ddf;
+  background-color: #4a90e2;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 40px;
+  padding: 15px;
+  margin-top: 30px;
 }
