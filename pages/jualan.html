@@ -5,11 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jualan Online - Farid Arofy</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .kategori-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .kategori-item {
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fefefe;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+    .kategori-item:hover {
+      transform: scale(1.03);
+    }
+    .kategori-item img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .kategori-item h3 {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Jualan Online</h1>
-    <p>Tempat jualan produk digital dan layanan online</p>
+    <p>Katalog produk affiliate dari berbagai marketplace dan digital platform</p>
   </header>
 
   <nav>
@@ -21,24 +50,55 @@
 
   <main>
     <section>
-      <h2>Produk Digital dan Layanan</h2>
-      <ul>
-        <li>
-          <strong>eBook Motivasi</strong><br />
-          Harga: Rp50.000<br />
-          <a href="https://payment-link.com/beli-ebook" target="_blank" rel="noopener">Beli Sekarang</a>
-        </li>
-        <li>
-          <strong>Konsultasi Online</strong><br />
-          Harga: Rp150.000 / sesi<br />
-          <a href="https://wa.me/628123456789" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
-        </li>
-        <li>
-          <strong>Video Motivasi Eksklusif</strong><br />
-          Harga: Rp100.000<br />
-          <a href="https://payment-link.com/beli-video" target="_blank" rel="noopener">Beli Sekarang</a>
-        </li>
-      </ul>
+      <h2>Pilih Kategori Produk</h2>
+      <div class="kategori-grid">
+
+        <a class="kategori-item" href="kategori/fashion.html">
+          <img src="../img/fashion.jpg" alt="Fashion Muslim">
+          <h3>Fashion Muslim</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/gadget.html">
+          <img src="../img/gadget.jpg" alt="Gadget & Aksesoris">
+          <h3>Gadget & Aksesoris</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/skincare.html">
+          <img src="../img/skincare.jpg" alt="Skincare & Cantik">
+          <h3>Skincare & Kecantikan</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/makanan.html">
+          <img src="../img/makanan.jpg" alt="Makanan Ringan">
+          <h3>Makanan & Snack</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/kado.html">
+          <img src="../img/kado.jpg" alt="Gift Islami">
+          <h3>Kado & Gift Islami</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/ebook.html">
+          <img src="../img/ebook.jpg" alt="eBook Digital">
+          <h3>eBook & Produk Digital</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/kelas.html">
+          <img src="../img/kelas.jpg" alt="Kelas Online">
+          <h3>Kelas & Webinar</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/islami.html">
+          <img src="../img/ibadah.jpg" alt="Ibadah">
+          <h3>Alat Ibadah & Islami</h3>
+        </a>
+
+        <a class="kategori-item" href="kategori/tiktok.html">
+          <img src="../img/tiktok.jpg" alt="Produk TikTok">
+          <h3>Produk Viral TikTok</h3>
+        </a>
+
+      </div>
     </section>
   </main>
 
