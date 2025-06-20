@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Saya - Farid Arofy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Tentang Saya</h2>
+    <p>Halo, saya <strong>Farid Arofy</strong> — seorang mahasiswa Teknik Industri, pekerja di bidang fabrikasi oil & gas, dan penulis konten motivasi.</p>
+
+    <p>Website ini saya buat sebagai tempat menyimpan:</p>
+    <ul>
+      <li>📝 Catatan kuliah Teknik Industri</li>
+      <li>🌿 Tulisan motivasi yang menenangkan dan membangkitkan semangat</li>
+      <li>📚 Kumpulan eBook gratis hasil karya sendiri</li>
+      <li>🛠️ Pengalaman pribadi di dunia kerja teknik</li>
+      <li>🛍️ Tips dan panduan jualan online</li>
+    </ul>
+
+    <p>Saya percaya bahwa proses belajar dan tumbuh itu tidak harus selalu ramai. Ada kekuatan dalam <em>sunyi</em>. Dalam kesendirian yang tidak sendiri. Dalam diam yang tetap berjuang.</p>
+
+    <p>Terima kasih sudah mampir. Semoga halaman ini bisa menjadi tempat kamu menemukan semangat baru dan arah yang tenang untuk terus melangkah. 🌱</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Farid Arofy
+  </footer>
+</body>
+</html>

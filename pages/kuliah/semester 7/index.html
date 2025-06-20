@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semester 7 - Teknik Industri</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Daftar Mata Kuliah Semester 7</h2>
+    <ul>
+      <li><a href="etika-profesi-dan-kewirausahaan.html">Etika Profesi dan Kewirausahaan</a></li>
+      <li><a href="perancangan-sistem-terintegrasi.html">Perancangan Sistem Terintegrasi</a></li>
+      <li><a href="audit-energi-dan-lingkungan.html">Audit Energi dan Lingkungan</a></li>
+      <li><a href="manajemen-sumber-daya-manusia.html">Manajemen Sumber Daya Manusia</a></li>
+      <li><a href="magang-industri.html">Magang Industri</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Farid Arofy
+  </footer>
+</body>
+</html>

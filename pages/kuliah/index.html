@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuliah - Farid Arofy</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Daftar Semester Kuliah</h2>
+    <ul id="semester-list"></ul>
+  </main>
+
+  <script>
+    const semesterList = [
+      "semester 1", "semester 2", "semester 3", "semester 4",
+      "semester 5", "semester 6", "semester 7", "semester 8"
+    ];
+
+    const ul = document.getElementById("semester-list");
+    semesterList.forEach((smt, i) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${smt}/index.html">Semester ${i + 1}</a>`;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>

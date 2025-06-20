@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semester 1 - Farid Arofy</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Mata Kuliah Semester 1</h2>
+    <ul id="matkul-list"></ul>
+  </main>
+
+  <script>
+    const matkul = [
+      { file: "pengantar-teknik-industri.html", judul: "Pengantar Teknik Industri" },
+      { file: "pancasila.html", judul: "Pendidikan Pancasila dan Kewarganegaraan" },
+      { file: "ibnu-sina.html", judul: "Sejarah Ibnu Sina" },
+      { file: "tata-tulis.html", judul: "Tata Tulis dan Komunikasi Ilmiah" },
+      { file: "kalkulus.html", judul: "Kalkulus I" },
+      { file: "fisika.html", judul: "Fisika Dasar I" },
+      { file: "bahasa-inggris.html", judul: "Bahasa Inggris I" },
+      { file: "agama.html", judul: "Pendidikan Agama" },
+      { file: "pemrograman.html", judul: "Pemrograman Komputer" },
+      { file: "praktikum-pemrograman.html", judul: "Praktik Pemrograman Komputer" }
+    ];
+
+    const ul = document.getElementById("matkul-list");
+    matkul.forEach(item => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${item.file}">${item.judul}</a>`;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>

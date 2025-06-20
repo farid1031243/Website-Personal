@@ -3,25 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Semester 6 - Teknik Industri - Farid Arofy</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <title>Semester 6 - Teknik Industri</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Teknik Industri - Semester 6</h1>
-    <p>Catatan Perjalanan Kuliah Semester 6</p>
-  </header>
-
-  <nav>
-   <a href="/index.html">Beranda</a>
-    <a href="/tentang.html">Tentang Saya</a>
-    <a href="/teknik.html">Teknik Industri</a>
-    <a href="/kerja.html">Kerja Engineering</a>
-    <a href="/ebook.html">eBook Gratis</a>
-    <a href="/motivasi.html">Motivasi</a>
-    <a href="/jualan.html">Jualan Online</a>
-    <a href="/kontak.html">Kontak</a>
-  </nav>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 
   <main>
     <h2>Daftar Mata Kuliah Semester 6</h2>
@@ -34,15 +27,11 @@
       <li><a href="optimisasi-sistem-industri.html">Optimisasi Sistem Industri</a></li>
       <li><a href="sistem-produksi.html">Sistem Produksi</a></li>
       <li><a href="praktik-simulasi-dan-optimisasi.html">Praktik Simulasi dan Optimisasi</a></li>
-      
-      <li><a href="refleksi-semester6.html">Refleksi Umum Semester 6</a></li>
     </ul>
-    <p><a href="semester5.html" style="color: #4a90e2;">Sebelumnya ke Semester 5 &raquo;</a></p>
-    <p><a href="semester7.html" style="color: #4a90e2;">Lanjut ke Semester 7 &raquo;</a></p>
   </main>
 
   <footer>
-    &copy; 2025 Farid Arofy - Teknik Industri
+    &copy; 2025 Farid Arofy
   </footer>
 </body>
 </html>

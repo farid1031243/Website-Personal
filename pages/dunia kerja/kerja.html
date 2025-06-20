@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farid Arofy - Mahasiswa Teknik & Drafter Profesional</title>
+  <meta name="description" content="Perjalanan Farid Arofy, mahasiswa Teknik Industri dan drafter berpengalaman di industri oil & gas. Proyek, keahlian, dan semangat bertumbuh jadi engineer.">
+  <meta name="author" content="Farid Arofy">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h1>Perjalanan Teknik Saya</h1>
+    <p>Saya adalah mahasiswa Teknik Industri di Universitas Ibnu Sina Batam yang juga aktif bekerja sebagai <strong>drafter profesional</strong> sejak 2011 di berbagai proyek fabrikasi oil and gas.</p>
+
+    <section>
+      <h2>🧠 Siapa Saya?</h2>
+      <p>Saya bukan hanya mahasiswa, tapi juga pekerja lapangan yang terus belajar. Saya telah terlibat dalam proyek-proyek besar seperti:</p>
+      <ul>
+        <li>⚙️ <strong>GALLAF II</strong> – Jacket & Topside</li>
+        <li>⚙️ <strong>SOFIA</strong> – Topside & Jacket</li>
+        <li>⚙️ <strong>CHANG HUA</strong>, <strong>FORMOSA</strong>, <strong>EMPIRE</strong>, <strong>Johan Castberg FPSO</strong></li>
+        <li>⛴️ Proyek di <strong>PT. SMOE</strong>, <strong>Citra Shipyard</strong>, <strong>Avasa</strong>, dan lainnya</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🛠️ Keahlian Saya</h2>
+      <ul>
+        <li>AutoCAD, Inventor, Promodel, Primavera</li>
+        <li>Pembuatan gambar teknik (isometrik, GA, detail)</li>
+        <li>MTO, BoQ, dokumen final dossier</li>
+        <li>Nesting, cutting plan, piping, struktur baja</li>
+        <li>Microsoft Office, Excel teknik, dokumen kontrol</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎓 Kuliah Sambil Berkarya</h2>
+      <p>Walaupun masih kuliah, saya belajar langsung dari dunia nyata. Saya percaya engineer sejati tidak dilihat dari gelar, tapi dari kemauan untuk terus bertumbuh, belajar dari lapangan, dan mengasah akhlak kerja.</p>
+    </section>
+
+    <section>
+      <h2>📸 Dokumentasi Lapangan</h2>
+      <img src="/Website-Personal/img/fabrikasi1.jpg" alt="Ilustrasi dunia fabrikasi" style="max-width:100%; border-radius:10px; margin-bottom: 1rem;">
+      <p>Gambar ilustrasi kerja teknik fabrikasi — ruang belajar dan kontribusi saya setiap hari.</p>
+    </section>
+
+    <section>
+      <h2>📥 Download File</h2>
+      <a href="/Website-Personal/docs/cv farid arofi-1.pdf" download class="button">📄 Download CV Saya (PDF)</a><br><br>
+      <a href="/Website-Personal/docs/ebook-motivasi-engineer.pdf" download class="button">📘 eBook "Motivasi Engineer"</a>
+    </section>
+
+    <section>
+      <h2>💼 Terhubung dengan Saya</h2>
+      <p>Lihat profil dan perjalanan saya lebih lengkap di LinkedIn:</p>
+      <a href="https://www.linkedin.com/in/farid-arofy-533b92219" target="_blank" class="button">🌐 LinkedIn Farid Arofy</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Farid Arofy – Berkarya dan Bertumbuh
+  </footer>
+
+</body>
+</html>

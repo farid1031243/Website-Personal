@@ -3,25 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Semester 4 - Teknik Industri - Farid Arofy</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <title>Semester 4 - Teknik Industri</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Teknik Industri - Semester 4</h1>
-    <p>Catatan Perjalanan Kuliah Semester 4</p>
-  </header>
-
-  <nav>
-    <a href="/index.html">Beranda</a>
-    <a href="/tentang.html">Tentang Saya</a>
-    <a href="/teknik.html">Teknik Industri</a>
-    <a href="/kerja.html">Kerja Engineering</a>
-    <a href="/ebook.html">eBook Gratis</a>
-    <a href="/motivasi.html">Motivasi</a>
-    <a href="/jualan.html">Jualan Online</a>
-    <a href="/kontak.html">Kontak</a>
-  </nav>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 
   <main>
     <h2>Daftar Mata Kuliah Semester 4</h2>
@@ -36,15 +29,11 @@
       <li><a href="ergonomi-perancangan-sistem-kerja.html">Ergonomi & Perancangan Sistem Kerja</a></li>
       <li><a href="proses-manufaktur.html">Proses Manufaktur</a></li>
       <li><a href="penelitian-operasional-ii.html">Penelitian Operasional II</a></li>
-      
-      <li><a href="refleksi-semester4.html">Refleksi Umum Semester 4</a></li>
     </ul>
-    <p><a href="semester3.html" style="color: #4a90e2;">Sebelumnya ke Semester 3 &raquo;</a></p>
-    <p><a href="semester5.html" style="color: #4a90e2;">Lanjut ke Semester 5 &raquo;</a></p>
   </main>
 
   <footer>
-    &copy; 2025 Farid Arofy - Teknik Industri
+    &copy; 2025 Farid Arofy
   </footer>
 </body>
 </html>

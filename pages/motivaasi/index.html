@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Motivasi Hidup - Farid Arofy</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Kumpulan Tema Motivasi</h2>
+    <ul id="motivasi-list"></ul>
+  </main>
+
+  <script>
+    const temaMotivasi = [
+      { file: "diri.html", judul: "🌿 Motivasi Diri" },
+      { file: "jatuh.html", judul: "🪨 Saat Terjatuh" },
+      { file: "masa-depan.html", judul: "🌅 Masa Depan" },
+      { file: "spiritual.html", judul: "🕊️ Motivasi Spiritual" },
+      { file: "keluarga.html", judul: "🏡 Motivasi Keluarga" },
+      { file: "karier.html", judul: "💼 Karier & Finansial" },
+      { file: "remaja.html", judul: "🔥 Remaja & Anak Muda" },
+      { file: "sunyi.html", judul: "🌌 Motivasi Sunyi" },
+      { file: "perubahan.html", judul: "🔄 Perubahan Diri" },
+      { file: "belajar.html", judul: "📖 Pendidikan & Belajar" },
+      { file: "mental.html", judul: "🧠 Mental Down & Bangkit" },
+      { file: "harian.html", judul: "🕰️ Motivasi Harian" },
+      { file: "tokoh.html", judul: "👑 Tokoh-Tokoh Besar" },
+      { file: "filsafat.html", judul: "📚 Filsafat Kehidupan" },
+      { file: "usaha.html", judul: "🚀 Usaha & Bisnis" },
+      { file: "perempuan.html", judul: "🌸 Motivasi Perempuan" },
+      { file: "hijrah.html", judul: "🛤️ Hijrah & Perjalanan" }
+    ];
+
+    const ul = document.getElementById("motivasi-list");
+    temaMotivasi.forEach(t => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${t.file}">${t.judul}</a>`;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>

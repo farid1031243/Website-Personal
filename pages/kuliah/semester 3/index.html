@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semester 3 - Teknik Industri</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Daftar Mata Kuliah Semester 3</h2>
+    <ul>
+      <li><a href="matematika-lanjut.html">Matematika Lanjut</a></li>
+      <li><a href="mekanika-teknik.html">Mekanika Teknik</a></li>
+      <li><a href="proses-manufaktur.html">Proses Manufaktur</a></li>
+      <li><a href="analisis-biaya.html">Analisis Biaya</a></li>
+      <li><a href="perancangan-sistem-kerja.html">Perancangan Sistem Kerja</a></li>
+      <li><a href="statistika-industri.html">Statistika Industri</a></li>
+      <li><a href="refleksi-semester3.html">Refleksi Umum Semester 3</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Farid Arofy
+  </footer>
+</body>
+</html>

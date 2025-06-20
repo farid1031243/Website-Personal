@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semester 2 - Teknik Industri</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <h2>Daftar Mata Kuliah Semester 2</h2>
+    <ul>
+      <li><a href="statistika.html">Statistika Industri</a></li>
+      <li><a href="manajemen.html">Manajemen Umum</a></li>
+      <li><a href="rangkaian-listrik.html">Rangkaian Listrik</a></li>
+      <li><a href="gambar-teknik.html">Gambar Teknik</a></li>
+      <li><a href="proses-produksi.html">Proses Produksi</a></li>
+      <li><a href="kalkulus2.html">Kalkulus II</a></li>
+      <li><a href="fisika2.html">Fisika Dasar II</a></li>
+      <li><a href="b-inggris2.html">Bahasa Inggris II</a></li>
+      <li><a href="agama2.html">Pendidikan Agama II</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Farid Arofy
+  </footer>
+</body>
+</html>

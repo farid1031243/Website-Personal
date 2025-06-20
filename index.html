@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- Navbar Otomatis -->
+  <div id="navbar"></div>
+  <script>
+    fetch("/Website-Personal/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
   <header>
     <h1>Website Farid Arofy</h1>
     <p>Catatan Kuliah, Motivasi, dan Perjalanan Hidup</p>
   </header>
-
-<nav>
-    <a href="/index.html">Beranda</a>
-    <a href="/tentang.html">Tentang Saya</a>
-    <a href="/teknik.html">Teknik Industri</a>
-    <a href="/kerja.html">Kerja Engineering</a>
-    <a href="/ebook.html">eBook Gratis</a>
-    <a href="/motivasi.html">Motivasi</a>
-    <a href="/jualan.html">Jualan Online</a>
-    <a href="/kontak.html">Kontak</a>
-</nav>
-
 
   <main>
     <section>
@@ -33,19 +32,19 @@
     <section>
       <h2>🌟 Apa yang Bisa Kamu Temukan di Sini?</h2>
 
-      <h3><a href="/pages/teknik.html">📘 Catatan Kuliah Teknik Industri</a></h3>
+      <h3><a href="pages/kuliah/semester 1/index.html">📘 Catatan Kuliah Teknik Industri</a></h3>
       <p>Ringkasan materi kuliah semester demi semester, refleksi, dan pengalaman nyata belajar di jurusan Teknik Industri.</p>
 
-      <h3><a href="/pages/kerja.html">🔧 Dunia Kerja Engineering</a></h3>
+      <h3><a href="pages/dunia kerja/kerja.html">🔧 Dunia Kerja Engineering</a></h3>
       <p>Catatan harian di dunia kerja, terutama di industri fabrikasi oil and gas. Cocok untuk kamu yang ingin terjun ke dunia engineering nyata.</p>
 
-      <h3><a href="/pages/motivasi.html">🌱 Kumpulan Motivasi Hidup</a></h3>
+      <h3><a href="pages/motivasi/index.html">🌱 Kumpulan Motivasi Hidup</a></h3>
       <p>Motivasi tenang dan dalam untuk mereka yang sedang berjuang dalam sunyi: motivasi diri, saat jatuh, spiritual, keluarga, masa depan, dan lainnya.</p>
 
-      <h3><a href="/pages/ebook.html">📚 eBook Gratis</a></h3>
+      <h3><a href="pages/ebook/ebook.html">📚 eBook Gratis</a></h3>
       <p>Download eBook motivasi yang saya tulis dari pengalaman pribadi dan kisah orang-orang hebat yang menginspirasi.</p>
 
-      <h3><a href="/pages/jualan.html">🛍️ Panduan Jualan Online</a></h3>
+      <h3><a href="pages/jualan/jualan.html">🛍️ Panduan Jualan Online</a></h3>
       <p>Tips sederhana dan nyata seputar jualan online untuk pemula, dari affiliate marketing, jualan digital, hingga memulai dari nol.</p>
     </section>
   </main>
