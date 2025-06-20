@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jualan Online - Farid Arofy</title>
+  <title>Produk TikTok - Farid Arofy</title>
   <link rel="stylesheet" href="../css/style.css" />
   <style>
-    .kategori-grid {
+    .produk-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .kategori-item {
+    .produk-item {
       text-align: center;
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -20,90 +20,69 @@
       padding: 15px;
       transition: transform 0.2s;
     }
-    .kategori-item:hover {
+    .produk-item:hover {
       transform: scale(1.03);
     }
-    .kategori-item img {
+    .produk-item img {
       width: 100%;
       max-height: 150px;
       object-fit: cover;
       border-radius: 8px;
     }
-    .kategori-item h3 {
+    .produk-item h3 {
       margin-top: 10px;
       font-size: 1.1em;
+    }
+    .produk-item a {
+      display: block;
+      margin-top: 10px;
+      background: #25d366;
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jualan Online</h1>
-    <p>Katalog produk affiliate dari berbagai marketplace dan digital platform</p>
+    <h1>Produk TikTok Afiliasi</h1>
+    <p>Rekomendasi produk terbaik dari TikTok Shop, bisa langsung beli dari link saya!</p>
   </header>
 
   <nav>
-    <a href="index.html">Beranda</a>
-    <a href="teknik.html">Teknik Industri</a>
-    <a href="ebook.html">eBook Gratis</a>
-    <a href="kontak.html">Kontak</a>
+    <a href="../index.html">Beranda</a>
+    <a href="../pages/ebook.html">eBook Gratis</a>
+    <a href="../pages/kontak.html">Kontak</a>
   </nav>
 
   <main>
     <section>
-      <h2>Pilih Kategori Produk</h2>
-      <div class="kategori-grid">
+      <h2>Daftar Produk TikTok</h2>
+      <div class="produk-grid">
 
-        <a class="kategori-item" href="kategori/fashion.html">
-          <img src="../img/fashion.jpg" alt="Fashion Muslim">
-          <h3>Fashion Muslim</h3>
-        </a>
+        <!-- Contoh Produk 1 -->
+        <div class="produk-item">
+          <img src="../img/produk1.jpg" alt="Contoh Produk 1">
+          <h3>Masker Wajah Viral</h3>
+          <a href="https://vt.tiktok.com/abc123/" target="_blank">Lihat di TikTok</a>
+        </div>
 
-        <a class="kategori-item" href="kategori/gadget.html">
-          <img src="../img/gadget.jpg" alt="Gadget & Aksesoris">
-          <h3>Gadget & Aksesoris</h3>
-        </a>
+        <!-- Contoh Produk 2 -->
+        <div class="produk-item">
+          <img src="../img/produk2.jpg" alt="Contoh Produk 2">
+          <h3>Sendal Wanita Kekinian</h3>
+          <a href="https://vt.tiktok.com/xyz456/" target="_blank">Lihat di TikTok</a>
+        </div>
 
-        <a class="kategori-item" href="kategori/skincare.html">
-          <img src="../img/skincare.jpg" alt="Skincare & Cantik">
-          <h3>Skincare & Kecantikan</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/makanan.html">
-          <img src="../img/makanan.jpg" alt="Makanan Ringan">
-          <h3>Makanan & Snack</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/kado.html">
-          <img src="../img/kado.jpg" alt="Gift Islami">
-          <h3>Kado & Gift Islami</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/ebook.html">
-          <img src="../img/ebook.jpg" alt="eBook Digital">
-          <h3>eBook & Produk Digital</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/kelas.html">
-          <img src="../img/kelas.jpg" alt="Kelas Online">
-          <h3>Kelas & Webinar</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/islami.html">
-          <img src="../img/ibadah.jpg" alt="Ibadah">
-          <h3>Alat Ibadah & Islami</h3>
-        </a>
-
-        <a class="kategori-item" href="kategori/tiktok.html">
-          <img src="../img/tiktok.jpg" alt="Produk TikTok">
-          <h3>Produk Viral TikTok</h3>
-        </a>
+        <!-- Tambah produk lain di sini -->
 
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Farid Arofy - Jualan Online
+    &copy; 2025 Farid Arofy - TikTok Affiliate
   </footer>
 </body>
 </html>
